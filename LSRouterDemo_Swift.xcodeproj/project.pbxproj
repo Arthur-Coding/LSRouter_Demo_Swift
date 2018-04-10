@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061307682043D36700628467 /* LSRouter+AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061307672043D36700628467 /* LSRouter+AppDelegate.swift */; };
+		0613076A2043DCB700628467 /* LSRouter+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061307692043DCB700628467 /* LSRouter+Foundation.swift */; };
+		06835EC3207B725300E2AB8C /* LSRouter+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EC1207B725300E2AB8C /* LSRouter+API.swift */; };
+		06835EC4207B725300E2AB8C /* LSRouter+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EC2207B725300E2AB8C /* LSRouter+Network.swift */; };
+		068AEFE22021695C00033CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068AEFE12021695C00033CAB /* AppDelegate.swift */; };
+		068AEFE72021695C00033CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE52021695C00033CAB /* Main.storyboard */; };
+		068AEFE92021695C00033CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE82021695C00033CAB /* Assets.xcassets */; };
+		068AEFEC2021695C00033CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFEA2021695C00033CAB /* LaunchScreen.storyboard */; };
+		EA5CA2B28959775A3402E15F /* Pods_LSRouterDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AEBFDB68BC5B7C4C698145 /* Pods_LSRouterDemo_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04A8335B8C65727BD9A994A7 /* Pods-LSRouterDemo_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSRouterDemo_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		061307672043D36700628467 /* LSRouter+AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSRouter+AppDelegate.swift"; sourceTree = "<group>"; };
+		061307692043DCB700628467 /* LSRouter+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LSRouter+Foundation.swift"; sourceTree = "<group>"; };
+		06835EC1207B725300E2AB8C /* LSRouter+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSRouter+API.swift"; sourceTree = "<group>"; };
+		06835EC2207B725300E2AB8C /* LSRouter+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSRouter+Network.swift"; sourceTree = "<group>"; };
+		06835EC7207B7BF900E2AB8C /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		068AEFDE2021695C00033CAB /* LSRouterDemo_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSRouterDemo_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		068AEFE12021695C00033CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		068AEFE62021695C00033CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		068AEFE82021695C00033CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		068AEFEB2021695C00033CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		068AEFED2021695C00033CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AEBFDB68BC5B7C4C698145 /* Pods_LSRouterDemo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSRouterDemo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F6E1D5803536806FCC0705 /* Pods-LSRouterDemo_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSRouterDemo_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		068AEFDB2021695C00033CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5CA2B28959775A3402E15F /* Pods_LSRouterDemo_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0613075D2043CC5500628467 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				06835ED1207C471B00E2AB8C /* 主模块 */,
+				06835ED3207C473700E2AB8C /* 视图控制器测试模块 */,
+				06835ED6207C476300E2AB8C /* 视图测试模块 */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		06835EB6207B712D00E2AB8C /* Module_Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				06835EC0207B721D00E2AB8C /* Initialization_System */,
+				06835EBF207B721500E2AB8C /* Initialization_Network */,
+			);
+			name = Module_Initialization;
+			sourceTree = "<group>";
+		};
+		06835EB7207B714100E2AB8C /* Project_Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				06835EBE207B71E700E2AB8C /* Project_Launch */,
+				06835EBB207B71B900E2AB8C /* Project_Images */,
+				06835ED0207B814A00E2AB8C /* Project_Resources */,
+			);
+			name = Project_Configuration;
+			sourceTree = "<group>";
+		};
+		06835EBB207B71B900E2AB8C /* Project_Images */ = {
+			isa = PBXGroup;
+			children = (
+				068AEFE82021695C00033CAB /* Assets.xcassets */,
+				06835EBD207B71CC00E2AB8C /* Images */,
+			);
+			name = Project_Images;
+			sourceTree = "<group>";
+		};
+		06835EBD207B71CC00E2AB8C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		06835EBE207B71E700E2AB8C /* Project_Launch */ = {
+			isa = PBXGroup;
+			children = (
+				068AEFEA2021695C00033CAB /* LaunchScreen.storyboard */,
+			);
+			name = Project_Launch;
+			sourceTree = "<group>";
+		};
+		06835EBF207B721500E2AB8C /* Initialization_Network */ = {
+			isa = PBXGroup;
+			children = (
+				06835EC1207B725300E2AB8C /* LSRouter+API.swift */,
+				06835EC2207B725300E2AB8C /* LSRouter+Network.swift */,
+			);
+			name = Initialization_Network;
+			sourceTree = "<group>";
+		};
+		06835EC0207B721D00E2AB8C /* Initialization_System */ = {
+			isa = PBXGroup;
+			children = (
+				06835EC7207B7BF900E2AB8C /* BridgingHeader.h */,
+				068AEFE12021695C00033CAB /* AppDelegate.swift */,
+				061307672043D36700628467 /* LSRouter+AppDelegate.swift */,
+				061307692043DCB700628467 /* LSRouter+Foundation.swift */,
+			);
+			name = Initialization_System;
+			sourceTree = "<group>";
+		};
+		06835ED0207B814A00E2AB8C /* Project_Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Project_Resources;
+			sourceTree = "<group>";
+		};
+		06835ED1207C471B00E2AB8C /* 主模块 */ = {
+			isa = PBXGroup;
+			children = (
+				06835ED2207C472B00E2AB8C /* Module_ViewControllers */,
+			);
+			name = "主模块";
+			sourceTree = "<group>";
+		};
+		06835ED2207C472B00E2AB8C /* Module_ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Module_ViewControllers;
+			sourceTree = "<group>";
+		};
+		06835ED3207C473700E2AB8C /* 视图控制器测试模块 */ = {
+			isa = PBXGroup;
+			children = (
+				06835ED4207C474700E2AB8C /* Module_Interface */,
+				06835ED5207C475500E2AB8C /* Module_ViewControllers */,
+			);
+			name = "视图控制器测试模块";
+			sourceTree = "<group>";
+		};
+		06835ED4207C474700E2AB8C /* Module_Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Module_Interface;
+			sourceTree = "<group>";
+		};
+		06835ED5207C475500E2AB8C /* Module_ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Module_ViewControllers;
+			sourceTree = "<group>";
+		};
+		06835ED6207C476300E2AB8C /* 视图测试模块 */ = {
+			isa = PBXGroup;
+			children = (
+				06835ED8207C477600E2AB8C /* Module_Interface */,
+				06835ED7207C476C00E2AB8C /* Module_Views */,
+			);
+			name = "视图测试模块";
+			sourceTree = "<group>";
+		};
+		06835ED7207C476C00E2AB8C /* Module_Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Module_Views;
+			sourceTree = "<group>";
+		};
+		06835ED8207C477600E2AB8C /* Module_Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Module_Interface;
+			sourceTree = "<group>";
+		};
+		068AEFD52021695C00033CAB = {
+			isa = PBXGroup;
+			children = (
+				068AEFE02021695C00033CAB /* LSRouterDemo_Swift */,
+				068AEFF320216A1300033CAB /* Others */,
+				427238B039631CBADB00C7FE /* Pods */,
+				B0C596EEEEA056D6601E89F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		068AEFDF2021695C00033CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				068AEFDE2021695C00033CAB /* LSRouterDemo_Swift.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		068AEFE02021695C00033CAB /* LSRouterDemo_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				06835EB7207B714100E2AB8C /* Project_Configuration */,
+				06835EB6207B712D00E2AB8C /* Module_Initialization */,
+				0613075D2043CC5500628467 /* Modules */,
+			);
+			path = LSRouterDemo_Swift;
+			sourceTree = "<group>";
+		};
+		068AEFF320216A1300033CAB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				068AEFE52021695C00033CAB /* Main.storyboard */,
+				068AEFED2021695C00033CAB /* Info.plist */,
+				068AEFDF2021695C00033CAB /* Products */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		427238B039631CBADB00C7FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04A8335B8C65727BD9A994A7 /* Pods-LSRouterDemo_Swift.debug.xcconfig */,
+				C5F6E1D5803536806FCC0705 /* Pods-LSRouterDemo_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0C596EEEEA056D6601E89F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0AEBFDB68BC5B7C4C698145 /* Pods_LSRouterDemo_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		068AEFDD2021695C00033CAB /* LSRouterDemo_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068AEFF02021695C00033CAB /* Build configuration list for PBXNativeTarget "LSRouterDemo_Swift" */;
+			buildPhases = (
+				408D3F24D60A01FC8B413BE5 /* [CP] Check Pods Manifest.lock */,
+				068AEFDA2021695C00033CAB /* Sources */,
+				068AEFDB2021695C00033CAB /* Frameworks */,
+				068AEFDC2021695C00033CAB /* Resources */,
+				AF60E574FCE086C96103B975 /* [CP] Embed Pods Frameworks */,
+				4295459DF1A86012C0E3B6D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LSRouterDemo_Swift;
+			productName = LSRouterDemo_Swift;
+			productReference = 068AEFDE2021695C00033CAB /* LSRouterDemo_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		068AEFD62021695C00033CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ArthurShuai;
+				TargetAttributes = {
+					068AEFDD2021695C00033CAB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 068AEFD92021695C00033CAB /* Build configuration list for PBXProject "LSRouterDemo_Swift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 068AEFD52021695C00033CAB;
+			productRefGroup = 068AEFDF2021695C00033CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				068AEFDD2021695C00033CAB /* LSRouterDemo_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		068AEFDC2021695C00033CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068AEFEC2021695C00033CAB /* LaunchScreen.storyboard in Resources */,
+				068AEFE92021695C00033CAB /* Assets.xcassets in Resources */,
+				068AEFE72021695C00033CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408D3F24D60A01FC8B413BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSRouterDemo_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4295459DF1A86012C0E3B6D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF60E574FCE086C96103B975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068AEFDA2021695C00033CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06835EC4207B725300E2AB8C /* LSRouter+Network.swift in Sources */,
+				061307682043D36700628467 /* LSRouter+AppDelegate.swift in Sources */,
+				0613076A2043DCB700628467 /* LSRouter+Foundation.swift in Sources */,
+				06835EC3207B725300E2AB8C /* LSRouter+API.swift in Sources */,
+				068AEFE22021695C00033CAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		068AEFE52021695C00033CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068AEFE62021695C00033CAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		068AEFEA2021695C00033CAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068AEFEB2021695C00033CAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068AEFEE2021695C00033CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		068AEFEF2021695C00033CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		068AEFF12021695C00033CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A8335B8C65727BD9A994A7 /* Pods-LSRouterDemo_Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurShuai.BaseProjectSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/BridgingHeader.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		068AEFF22021695C00033CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F6E1D5803536806FCC0705 /* Pods-LSRouterDemo_Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurShuai.BaseProjectSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/BridgingHeader.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		068AEFD92021695C00033CAB /* Build configuration list for PBXProject "LSRouterDemo_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068AEFEE2021695C00033CAB /* Debug */,
+				068AEFEF2021695C00033CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068AEFF02021695C00033CAB /* Build configuration list for PBXNativeTarget "LSRouterDemo_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068AEFF12021695C00033CAB /* Debug */,
+				068AEFF22021695C00033CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 068AEFD62021695C00033CAB /* Project object */;
+}

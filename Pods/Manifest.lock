@@ -1,0 +1,39 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - LSRootNavigationController (1.1.2)
+  - LSRouter (1.1.2)
+  - SwiftyJSON (4.0.0)
+  - Tools/TimeCategory (1.0.0):
+    - LSRouter
+
+DEPENDENCIES:
+  - AFNetworking
+  - LSRootNavigationController
+  - LSRouter
+  - SwiftyJSON
+  - Tools/TimeCategory
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  LSRootNavigationController: 2eb7f0cd6666b14c32a6e4f5fd2259786e38bdc0
+  LSRouter: e70fe5bb8e7e80ddcb1e267388eb392ce19aee62
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Tools: 834243dcb1df4811980582c9f9dd32e2eabc9770
+
+PODFILE CHECKSUM: c1c0b2974f1be00e257229241c1a989bf86810af
+
+COCOAPODS: 1.4.0
