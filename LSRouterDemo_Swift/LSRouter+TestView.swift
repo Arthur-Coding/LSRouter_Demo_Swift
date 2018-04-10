@@ -10,12 +10,14 @@ import Foundation
 
 public extension LSRouter {
 
-    private static let module_TV = "TestView"
-    private static let module_TV_action = "changeShowText:"
-
-    public class func action_TV_showText(handler:LSRouterHandler?, text:String?)
+    public class func action_TV_showText(text:String?, handler:LSRouterHandler?)
     {
-        openModule(module_TV, action: module_TV_action, params: text, perform: handler)
+        let testView = TestView.init(frame: UIScreen.main.bounds)
+        testView.changeShowText(text: text)
+        if handler != nil
+        {
+            handler!(testView)
+        }
     }
 
 }

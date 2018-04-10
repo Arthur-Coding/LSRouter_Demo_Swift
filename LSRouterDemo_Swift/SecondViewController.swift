@@ -10,7 +10,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    open var message:String?
+    @objc open var message:String? {
+        didSet {
+            let lab = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 150, height: 40))
+            lab.center = self.view.center;
+            lab.textColor = UIColor.red
+            lab.textAlignment = .center
+            lab.numberOfLines = 2
+            lab.text = message
+            view.addSubview(lab)
+
+            navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "更改主页标题", style: .done, target: self, action: #selector(testNotification))
+        }
+    }
 
 
     override func viewDidLoad() {
@@ -19,29 +31,27 @@ class SecondViewController: UIViewController {
 		config()
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        LSRouter.releaseModule("SecondViewController")
+    }
+
     // 页面配置
     private func config()
     {
         title = "SecondPage"
 		view.backgroundColor = UIColor.white
-        
-        let lab = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 150, height: 40))
-        lab.center = self.view.center;
-        lab.textColor = UIColor.red
-        lab.textAlignment = .center
-        lab.numberOfLines = 2
-        lab.text = message
-        view.addSubview(lab)
     }
 
-    private func testNotification()
+    @objc private func testNotification()
     {
         LSRouter.sendInformation("FirstPage", tagName:"SecondViewController_test")
     }
 
-    public func alertWith(message:String?)
+    @objc public func alertTest(message:String?)
     {
-        let alert = UIAlertController.init(title: "Surprised!!!", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController.init(title: "Surprised!", message: message, preferredStyle: .alert)
         let action = UIAlertAction.init(title: "Sure", style: .default, handler: nil)
 		alert.addAction(action)
         present(alert, animated: true, completion: nil)

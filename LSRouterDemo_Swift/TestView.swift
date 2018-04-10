@@ -12,15 +12,13 @@ class TestView: UIView {
 
     var lab:UILabel?
 
-    convenience init() {
-        self.init()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
 
-        frame = UIScreen.main.bounds
         backgroundColor = UIColor.red
 
-        lab = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 150, height: 40))
-        lab?.center = center;
-        lab?.textColor = UIColor.red
+        lab = UILabel.init(frame: CGRect.init(x: 0, y: 200, width: 150, height: 40))
+        lab?.textColor = UIColor.white
         lab?.textAlignment = .center
         lab?.numberOfLines = 2
         addSubview(lab!)
@@ -32,13 +30,18 @@ class TestView: UIView {
         btn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     @objc private func backAction()
     {
 		removeFromSuperview()
     }
 
-    public func changeShowText(text:String?) {
-        
+    public func changeShowText(text:String?)
+    {
+        lab?.text = text
     }
 
 }

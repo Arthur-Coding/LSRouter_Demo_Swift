@@ -13,7 +13,9 @@
 
 #import <LSRouter/LSRouter.h>
 #import <LSRootNavigationController/LSRootNavigationController.h>
-#import "AFNetworking.h"
 #import <TimeCategory/LSRouter+TimeCategory.h>
+
+#import "AFNetworking.h"
+#import "UIViewController+viewDidLoad.h"
 
 #endif /* Bridging_Header_h */

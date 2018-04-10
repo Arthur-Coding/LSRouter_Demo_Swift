@@ -20,6 +20,7 @@
 		068AEFE72021695C00033CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE52021695C00033CAB /* Main.storyboard */; };
 		068AEFE92021695C00033CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE82021695C00033CAB /* Assets.xcassets */; };
 		068AEFEC2021695C00033CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFEA2021695C00033CAB /* LaunchScreen.storyboard */; };
+		06CCBF20207CCFBD00AFA7CE /* UIViewController+viewDidLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CCBF1E207CCFBD00AFA7CE /* UIViewController+viewDidLoad.m */; };
 		EA5CA2B28959775A3402E15F /* Pods_LSRouterDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AEBFDB68BC5B7C4C698145 /* Pods_LSRouterDemo_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		068AEFE82021695C00033CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068AEFEB2021695C00033CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		068AEFED2021695C00033CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CCBF1E207CCFBD00AFA7CE /* UIViewController+viewDidLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+viewDidLoad.m"; sourceTree = "<group>"; };
+		06CCBF1F207CCFBD00AFA7CE /* UIViewController+viewDidLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+viewDidLoad.h"; sourceTree = "<group>"; };
 		C0AEBFDB68BC5B7C4C698145 /* Pods_LSRouterDemo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSRouterDemo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F6E1D5803536806FCC0705 /* Pods-LSRouterDemo_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSRouterDemo_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSRouterDemo_Swift/Pods-LSRouterDemo_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +136,8 @@
 		06835ED0207B814A00E2AB8C /* Project_Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06CCBF1F207CCFBD00AFA7CE /* UIViewController+viewDidLoad.h */,
+				06CCBF1E207CCFBD00AFA7CE /* UIViewController+viewDidLoad.m */,
 			);
 			name = Project_Resources;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				06835EE0207C857E00E2AB8C /* TestView.swift in Sources */,
 				06835EC3207B725300E2AB8C /* LSRouter+API.swift in Sources */,
 				068AEFE22021695C00033CAB /* AppDelegate.swift in Sources */,
+				06CCBF20207CCFBD00AFA7CE /* UIViewController+viewDidLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
