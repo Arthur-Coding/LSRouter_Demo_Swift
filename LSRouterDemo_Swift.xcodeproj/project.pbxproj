@@ -11,6 +11,11 @@
 		0613076A2043DCB700628467 /* LSRouter+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061307692043DCB700628467 /* LSRouter+Foundation.swift */; };
 		06835EC3207B725300E2AB8C /* LSRouter+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EC1207B725300E2AB8C /* LSRouter+API.swift */; };
 		06835EC4207B725300E2AB8C /* LSRouter+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EC2207B725300E2AB8C /* LSRouter+Network.swift */; };
+		06835EDA207C49C500E2AB8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835ED9207C49C500E2AB8C /* MainViewController.swift */; };
+		06835EDC207C579A00E2AB8C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EDB207C579A00E2AB8C /* SecondViewController.swift */; };
+		06835EDE207C64B100E2AB8C /* LSRouter+SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EDD207C64B100E2AB8C /* LSRouter+SecondViewController.swift */; };
+		06835EE0207C857E00E2AB8C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EDF207C857E00E2AB8C /* TestView.swift */; };
+		06835EE2207C859800E2AB8C /* LSRouter+TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835EE1207C859800E2AB8C /* LSRouter+TestView.swift */; };
 		068AEFE22021695C00033CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068AEFE12021695C00033CAB /* AppDelegate.swift */; };
 		068AEFE72021695C00033CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE52021695C00033CAB /* Main.storyboard */; };
 		068AEFE92021695C00033CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068AEFE82021695C00033CAB /* Assets.xcassets */; };
@@ -25,6 +30,11 @@
 		06835EC1207B725300E2AB8C /* LSRouter+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSRouter+API.swift"; sourceTree = "<group>"; };
 		06835EC2207B725300E2AB8C /* LSRouter+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSRouter+Network.swift"; sourceTree = "<group>"; };
 		06835EC7207B7BF900E2AB8C /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		06835ED9207C49C500E2AB8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		06835EDB207C579A00E2AB8C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		06835EDD207C64B100E2AB8C /* LSRouter+SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LSRouter+SecondViewController.swift"; sourceTree = "<group>"; };
+		06835EDF207C857E00E2AB8C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		06835EE1207C859800E2AB8C /* LSRouter+TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LSRouter+TestView.swift"; sourceTree = "<group>"; };
 		068AEFDE2021695C00033CAB /* LSRouterDemo_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSRouterDemo_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068AEFE12021695C00033CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068AEFE62021695C00033CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +148,7 @@
 		06835ED2207C472B00E2AB8C /* Module_ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				06835ED9207C49C500E2AB8C /* MainViewController.swift */,
 			);
 			name = Module_ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 		06835ED4207C474700E2AB8C /* Module_Interface */ = {
 			isa = PBXGroup;
 			children = (
+				06835EDD207C64B100E2AB8C /* LSRouter+SecondViewController.swift */,
 			);
 			name = Module_Interface;
 			sourceTree = "<group>";
@@ -161,6 +173,7 @@
 		06835ED5207C475500E2AB8C /* Module_ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				06835EDB207C579A00E2AB8C /* SecondViewController.swift */,
 			);
 			name = Module_ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +190,7 @@
 		06835ED7207C476C00E2AB8C /* Module_Views */ = {
 			isa = PBXGroup;
 			children = (
+				06835EDF207C857E00E2AB8C /* TestView.swift */,
 			);
 			name = Module_Views;
 			sourceTree = "<group>";
@@ -184,6 +198,7 @@
 		06835ED8207C477600E2AB8C /* Module_Interface */ = {
 			isa = PBXGroup;
 			children = (
+				06835EE1207C859800E2AB8C /* LSRouter+TestView.swift */,
 			);
 			name = Module_Interface;
 			sourceTree = "<group>";
@@ -375,9 +390,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06835EE2207C859800E2AB8C /* LSRouter+TestView.swift in Sources */,
 				06835EC4207B725300E2AB8C /* LSRouter+Network.swift in Sources */,
 				061307682043D36700628467 /* LSRouter+AppDelegate.swift in Sources */,
 				0613076A2043DCB700628467 /* LSRouter+Foundation.swift in Sources */,
+				06835EDA207C49C500E2AB8C /* MainViewController.swift in Sources */,
+				06835EDE207C64B100E2AB8C /* LSRouter+SecondViewController.swift in Sources */,
+				06835EDC207C579A00E2AB8C /* SecondViewController.swift in Sources */,
+				06835EE0207C857E00E2AB8C /* TestView.swift in Sources */,
 				06835EC3207B725300E2AB8C /* LSRouter+API.swift in Sources */,
 				068AEFE22021695C00033CAB /* AppDelegate.swift in Sources */,
 			);

@@ -18,6 +18,15 @@ public extension LSRouter {
         let tableView:UITableView = UITableView.appearance()
         tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
         tableView.tableFooterView = UIView.init()
+
+        let rootVC = MainViewController()
+        let rootNavc = LSRootNavigationController.init(rootViewController: rootVC)
+		rootNavc.navigationBar.isTranslucent = false
+        rootNavc.navigationBar.tintColor = UIColor.white
+        rootNavc.navigationBar.barTintColor = UIColor.blue
+        rootNavc.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        application.delegate?.window??.rootViewController = rootNavc
+		application.delegate?.window??.makeKeyAndVisible()
     }
 
     // MARK: - 通知相关配置
